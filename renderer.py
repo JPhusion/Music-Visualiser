@@ -1,9 +1,11 @@
+print("Initialising...")
 import colorsys
 import easygui
 import random
 import wave
 import cv2
 import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame.freetype
 import moviepy.editor as mpe
 from tqdm import tqdm
@@ -12,9 +14,7 @@ from shutil import copyfile
 from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageFilter, ImageEnhance
 from AudioAnalyzer import *
-print("Initialising...")
 
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 print("Select a .wav file")
 particles = []
 
@@ -205,11 +205,11 @@ background = pygame.image.load(
 logo = pygame.image.load('assets/logo.png').convert_alpha()
 value_hsv = [1, 0.5, 220]
 
-pygame.mixer.music.load(filename)
-pygame.mixer.music.play(0)
+# pygame.mixer.music.load(filename)
+# pygame.mixer.music.play(0)
 
 counter = 0
-running = False
+running = True
 frames = int(duration_seconds*renderfps)
 pbar = tqdm(total=frames,
             bar_format='Rendering {r_bar} |{bar}| {percentage:3.0f}%', colour='GREEN')
