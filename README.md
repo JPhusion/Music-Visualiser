@@ -3,7 +3,7 @@
 The music visualiser takes in an audio file as input and analyses the decibel level of multiple frequency bands and produces a visual representation of each frequency band using a circle with extending bars. The visualiser is capable of visualizing live as well as rendering a video output.
 
 ## Screenshots
-![alt tag](https://cdn.discordapp.com/attachments/925547447487447081/927854208202457098/246.bmp "Sample screenshot 1")
+![alt tag](https://cdn.discordapp.com/attachments/925547447487447081/927855243935490088/unknown.png "Sample screenshot 1")
 
 ![alt tag](https://media.discordapp.net/attachments/925547447487447081/927786085050880010/unknown.png?width=1197&height=673 "Sample screenshot 2")
 
